@@ -17,6 +17,7 @@ module.exports = dir => {
             env = 'e2e';
             break;
         default:
+            env = '';
             break;
     }
 

@@ -8,7 +8,7 @@ const Task = require('../api/task');
 router.prefix('/user');
 
 // create user
-router.post('/:id', async(ctx) =>{
+router.post('/', async(ctx) =>{
     try{
         const result = await Task.addTask({...ctx.request.body});
         ctx.body = result;
@@ -23,7 +23,7 @@ router.get('/',async(ctx) =>{
     try {
         ctx.body = await getAllUsers()
     }catch (e) {
-        console.log('err ', e)
+        console.log('err ', e);
         ctx.status=500;
         ctx.body='Error'
 
@@ -37,6 +37,6 @@ router.get('/:id',async(ctx) =>{
 // delete user
 router.delete('/:id', async (ctx) =>{
     ctx.body = 'delete user'
-})
+});
 
 module.exports = router;

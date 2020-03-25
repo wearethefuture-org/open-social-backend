@@ -3,7 +3,6 @@ const UserService = require('../../../services/user');
 
 const createUser = async ctx => {
   const userService = new UserService();
-  console.log(ctx.request.body);
   const newUser = ctx.request.body;
   ctx.response.body = await userService.createUser(newUser);
 };
@@ -21,8 +20,13 @@ const user = async ctx => {
 };
 
 const users = async ctx => {
-  const userService = new UserService();
-  ctx.response.body = await userService.getUsers();
+  try{
+    const userService = new UserService();
+    ctx.response.body = await userService.getUsers();
+  }catch (e) {
+    console.log('err', e);
+    ctx.response.body= 500;
+  }
 };
 
 const updateUser = async ctx => {

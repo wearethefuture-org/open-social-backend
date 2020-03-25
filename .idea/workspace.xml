@@ -2,51 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.sequelizerc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/sequelize.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191103133137-create_categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191103135020-create_sub_categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128101034-create_products_table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111010-create_characteristics_settings_table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111255-create_characteristics_values_table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111833-create_sub_category_characteristics_table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111899-files.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111900-create_users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111901-create_users_keys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111902-create_users_forgot_passwords.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20200210083038-create_comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/aliases.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/relations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/characteristicsSettings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/characteristicsValues.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/comments.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/files.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/subCategories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/subCategoryCharacteristics.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/usersForgotPasswords.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/models/sources/usersKeys.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/seeders/20191206150459-seed_users.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/seeders/20191206164159-seed_categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/seeders/20191207202012-seed_sub_categories.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/seeders/20191212170431-seed_settings.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/seeders/20191212172101-seed_products.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/seeders/20191212173254-seed_values.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/users/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/baseModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/services/user.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/env/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/env/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +109,7 @@
       <workItem from="1584996828498" duration="1151000" />
       <workItem from="1584998125465" duration="1267000" />
       <workItem from="1585041101576" duration="1021000" />
-      <workItem from="1585058323854" duration="12566000" />
+      <workItem from="1585058323854" duration="13874000" />
     </task>
     <servers />
   </component>
@@ -165,22 +121,22 @@
       <screen x="0" y="207" width="1920" height="873" />
     </state>
     <state x="605" y="194" width="611" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585069427099" />
-    <state width="1897" height="343" key="GridCell.Tab.0.bottom" timestamp="1585140708887">
+    <state width="1897" height="343" key="GridCell.Tab.0.bottom" timestamp="1585141814791">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585140708887" />
-    <state width="1897" height="343" key="GridCell.Tab.0.center" timestamp="1585140708887">
+    <state width="1897" height="343" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585141814791" />
+    <state width="1897" height="343" key="GridCell.Tab.0.center" timestamp="1585141814791">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585140708887" />
-    <state width="1897" height="343" key="GridCell.Tab.0.left" timestamp="1585140708887">
+    <state width="1897" height="343" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585141814791" />
+    <state width="1897" height="343" key="GridCell.Tab.0.left" timestamp="1585141814791">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585140708887" />
-    <state width="1897" height="343" key="GridCell.Tab.0.right" timestamp="1585140708887">
+    <state width="1897" height="343" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585141814791" />
+    <state width="1897" height="343" key="GridCell.Tab.0.right" timestamp="1585141814791">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585140708887" />
+    <state width="1897" height="343" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585141814791" />
     <state width="1897" height="325" key="GridCell.Tab.1.bottom" timestamp="1584976890962">
       <screen x="0" y="207" width="1920" height="873" />
     </state>

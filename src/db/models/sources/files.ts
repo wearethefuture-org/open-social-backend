@@ -1,4 +1,4 @@
-export const files = (sequelize:any, DataTypes:any) => {
+module.exports =  (sequelize:any, DataTypes:any) => {
     const files = sequelize.define(
         'files',
         {

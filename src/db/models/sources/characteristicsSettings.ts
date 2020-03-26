@@ -1,4 +1,4 @@
-export const characteristicsSettings  = (sequelize:any, DataTypes:any) => {
+module.exports =  (sequelize:any, DataTypes:any) => {
     const characteristicsSettings = sequelize.define(
         'characteristicsSettings',
         {

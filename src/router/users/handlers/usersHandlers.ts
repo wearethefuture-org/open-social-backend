@@ -1,6 +1,7 @@
 
 import {UserService} from '../../../services/user'
 // const UserService = require('../../../services/user');
+
 // const StorageService = require('../../../services/storage');
 
 export const createUser = async (ctx:any) => {
@@ -18,6 +19,7 @@ export const createUser = async (ctx:any) => {
 export const user = async (ctx:any) => {
   const userService = new UserService();
   const { id } = ctx.params;
+  console.log(" id   ", id, typeof id);
   ctx.response.body = await userService.getUser(id);
 };
 

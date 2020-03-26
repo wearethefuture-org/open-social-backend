@@ -1,4 +1,4 @@
-export const users = (sequelize:any, DataTypes:any) => {
+module.exports =  (sequelize:any, DataTypes:any) => {
   const user = sequelize.define(
     'users',
     {

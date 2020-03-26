@@ -1,4 +1,4 @@
-export const comments = (sequelize:any, DataTypes:any) => {
+module.exports =  (sequelize:any, DataTypes:any) => {
     const comments = sequelize.define(
         'comments',
         {

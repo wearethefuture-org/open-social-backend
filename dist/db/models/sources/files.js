@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.files = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const files = sequelize.define('files', {
         id: {
             type: DataTypes.BIGINT,

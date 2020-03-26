@@ -6,10 +6,10 @@ export class UserService extends BaseModelService {
     return this.model.users.findAll({});
   }
 
-  async getUser(id:string) {
+  async getUser(id:number) {
     return this.model.users.findOne({
       where: {
-        id
+        id:id
       },
       include: [
         {

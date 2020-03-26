@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.subCategories = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const subCategories = sequelize.define('subCategories', {
         id: {
             type: DataTypes.BIGINT,

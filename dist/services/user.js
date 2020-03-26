@@ -8,7 +8,7 @@ class UserService extends baseModel_1.BaseModelService {
     async getUser(id) {
         return this.model.users.findOne({
             where: {
-                id
+                id: id
             },
             include: [
                 {

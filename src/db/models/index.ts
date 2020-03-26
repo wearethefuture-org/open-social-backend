@@ -30,7 +30,7 @@ const db:any = {
 };
 
 
-const sequelize = new Sequelize("test", "postgres", "12321", {
+const sequelize:any = new Sequelize("test", "postgres", "12321", {
   host: "127.0.0.1",
   dialect: 'postgres',
   pool: {

@@ -1,36 +1,37 @@
 import {Model} from '../db/models/index'
 // const Model = require('../db/models');
 
-const Aliases = require('../db/models/aliases');
+import {aliases} from '../db/models/aliases'
 
 export class BaseModelService {
-  public model:any;
+  model:any;
   aliases:any;
+  transaction: any;
 
 
 
   constructor() {
     this.model = Model;
-    this.aliases = Aliases;
+    this.aliases = aliases;
     // this.transaction = null;
   }
 
-  // async beginTransaction() {
-  //   this.transaction = await this.model.sequelize.transaction();
-  // }
-  //
-  // async commitTransaction() {
-  //   if (this.transaction) {
-  //     await this.transaction.commit();
-  //   }
-  //   this.transaction = null;
-  // }
-  //
-  // async rollbackTransaction() {
-  //   if (this.transaction) {
-  //     await this.transaction.rollback();
-  //   }
-  //   this.transaction = null;
-  // }
+  async beginTransaction() {
+    this.transaction = await this.model.sequelize.transaction();
+  }
+
+  async commitTransaction() {
+    if (this.transaction) {
+      await this.transaction.commit();
+    }
+    this.transaction = null;
+  }
+
+  async rollbackTransaction() {
+    if (this.transaction) {
+      await this.transaction.rollback();
+    }
+    this.transaction = null;
+  }
 }
 

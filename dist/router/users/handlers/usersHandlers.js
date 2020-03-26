@@ -16,6 +16,7 @@ exports.deleteUser = async (ctx) => {
 exports.user = async (ctx) => {
     const userService = new user_1.UserService();
     const { id } = ctx.params;
+    console.log(" id   ", id, typeof id);
     ctx.response.body = await userService.getUser(id);
 };
 exports.users = async (ctx) => {

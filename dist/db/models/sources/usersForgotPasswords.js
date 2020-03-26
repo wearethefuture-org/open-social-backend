@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.usersForgotPasswords = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const usersForgotPasswords = sequelize.define('usersForgotPasswords', {
         id: {
             type: DataTypes.BIGINT,

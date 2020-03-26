@@ -1,4 +1,4 @@
-export const subCategories  = (sequelize:any, DataTypes:any) => {
+module.exports =  (sequelize:any, DataTypes:any) => {
     const subCategories = sequelize.define(
         'subCategories',
         {

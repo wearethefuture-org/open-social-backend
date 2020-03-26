@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.comments = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const comments = sequelize.define('comments', {
         id: {
             type: DataTypes.BIGINT,

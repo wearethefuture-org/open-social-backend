@@ -15,5 +15,5 @@ app.listen(3000, () => {
 /**
  * Loading env variables
  */
-require('./services/env/index')(`${__dirname}/../`);
+require('./services/env')(`${__dirname}/../`);
 //# sourceMappingURL=app.js.map

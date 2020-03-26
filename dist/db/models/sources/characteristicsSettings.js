@@ -1,6 +1,4 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.characteristicsSettings = (sequelize, DataTypes) => {
+module.exports = (sequelize, DataTypes) => {
     const characteristicsSettings = sequelize.define('characteristicsSettings', {
         id: {
             type: DataTypes.BIGINT,

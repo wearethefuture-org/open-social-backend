@@ -1,0 +1,1 @@
+{"version":3,"file":"baseModel.js","sourceRoot":"","sources":["../../src/services/baseModel.ts"],"names":[],"mappings":";;AAAA,8CAAwC;AACxC,yCAAyC;AAEzC,MAAM,OAAO,GAAG,OAAO,CAAC,sBAAsB,CAAC,CAAC;AAEhD,MAAa,gBAAgB;IAM3B;QACE,IAAI,CAAC,KAAK,GAAG,aAAK,CAAC;QACnB,IAAI,CAAC,OAAO,GAAG,OAAO,CAAC;QACvB,2BAA2B;IAC7B,CAAC;CAmBF;AA7BD,4CA6BC"}

@@ -2,8 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/assert.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/assert.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/async_hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/async_hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/child_process.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/child_process.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/cluster.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/cluster.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/constants.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/constants.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/crypto.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/crypto.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/dgram.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/dgram.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/domain.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/domain.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/events.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/events.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/fs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/fs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/globals.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/http.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/http.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/http2.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/http2.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/https.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/https.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/index.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/module.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/module.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/net.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/net.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/os.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/os.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/path.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/path.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/perf_hooks.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/perf_hooks.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/readline.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/readline.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/repl.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/repl.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/stream.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/tls.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.2/fs.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.2/fs.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.2/util.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/ts3.2/util.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.5/index.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/ts3.5/wasi.d.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/url.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/url.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/util.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/util.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/v8.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/v8.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/@types/node/worker_threads.d.ts" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/@types/node/worker_threads.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/aliases.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/aliases.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/relations.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/relations.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/users/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/baseModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/baseModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="tsconfig.json" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -35,25 +80,28 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/services/env" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/db/models/sources" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/db/models/sources" />
+      <recent name="$PROJECT_DIR$/src/db/models" />
+      <recent name="$PROJECT_DIR$/src/services" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/db/models/sources" />
       <recent name="$PROJECT_DIR$/src/services/env" />
       <recent name="$PROJECT_DIR$/src/router/users" />
       <recent name="$PROJECT_DIR$/src/router/users/handlers" />
       <recent name="$PROJECT_DIR$/src/services" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/services" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start">
-    <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/app.js" working-dir="$PROJECT_DIR$/src">
+    <configuration name="app.ts" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/app.ts" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
     <configuration name="db:migrate" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -91,7 +139,7 @@
         <item itemvalue="npm.start" />
         <item itemvalue="npm.start:dev" />
         <item itemvalue="npm.db:migrate" />
-        <item itemvalue="Node.js.app.js" />
+        <item itemvalue="Node.js.app.ts" />
       </list>
     </recent_temporary>
   </component>
@@ -110,7 +158,8 @@
       <workItem from="1584996828498" duration="1151000" />
       <workItem from="1584998125465" duration="1267000" />
       <workItem from="1585041101576" duration="1021000" />
-      <workItem from="1585058323854" duration="16758000" />
+      <workItem from="1585058323854" duration="18911000" />
+      <workItem from="1585220410984" duration="10473000" />
     </task>
     <servers />
   </component>
@@ -122,22 +171,22 @@
       <screen x="0" y="207" width="1920" height="873" />
     </state>
     <state x="605" y="194" width="611" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585069427099" />
-    <state width="1897" height="343" key="GridCell.Tab.0.bottom" timestamp="1585145410915">
+    <state width="1897" height="487" key="GridCell.Tab.0.bottom" timestamp="1585233898126">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585145410915" />
-    <state width="1897" height="343" key="GridCell.Tab.0.center" timestamp="1585145410915">
+    <state width="1897" height="487" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585233898126" />
+    <state width="1897" height="487" key="GridCell.Tab.0.center" timestamp="1585233898126">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585145410915" />
-    <state width="1897" height="343" key="GridCell.Tab.0.left" timestamp="1585145410915">
+    <state width="1897" height="487" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585233898126" />
+    <state width="1897" height="487" key="GridCell.Tab.0.left" timestamp="1585233898126">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585145410915" />
-    <state width="1897" height="343" key="GridCell.Tab.0.right" timestamp="1585145410915">
+    <state width="1897" height="487" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585233898126" />
+    <state width="1897" height="487" key="GridCell.Tab.0.right" timestamp="1585233898126">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="343" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585145410915" />
+    <state width="1897" height="487" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585233898126" />
     <state width="1897" height="325" key="GridCell.Tab.1.bottom" timestamp="1584976890962">
       <screen x="0" y="207" width="1920" height="873" />
     </state>

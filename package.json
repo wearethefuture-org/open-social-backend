@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": " nodemon dist/app.js",
-    "start:dev": "DEBUG='app*,critical*,info*,warning*,security,system*' NODE_ENV=local nodemon --inspect src/app.ts",
+    "start": "  nodemon dist/app.js",
+    "start:dev": " tsc && DEBUG='app*,critical*,info*,warning*,security,system*' NODE_ENV=local nodemon --inspect dist/app.js",
     "db:migrate": "DEBUG='app*,critical*,info*,warning*,security*' sequelize db:migrate"
   },
   "keywords": [],
@@ -17,6 +17,7 @@
     "@types/bluebird": "^3.5.30",
     "@types/node": "^12.12.31",
     "@types/validator": "^12.0.1",
+    "backend-tslint-rules": "^1.14.0",
     "dotenv": "^8.2.0",
     "koa": "^2.11.0",
     "koa-body": "^4.1.1",

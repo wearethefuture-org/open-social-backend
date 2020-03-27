@@ -5,24 +5,17 @@ import {Sequelize} from "sequelize";
 import {aliases} from './aliases'
 import {relations} from "./relations";
 
-// const {
-//   databaseName,
-//   username,
-//   password,
-//   host
-// } = require('../../utils/config');
 const data =  {
   databaseName: 'test',
   username : 'postgres',
   password : '12321',
-  host:'127.0.0.1'
+  host: '127.0.0.1'
 } ;
 
 const basename = path.basename(__filename);
 const db:any = {
   aliases
 };
-
 
 const sequelize:any = new Sequelize("test", "postgres", "12321", {
   host: "127.0.0.1",

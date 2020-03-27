@@ -1,6 +1,6 @@
 {
-  "extends": [
-    "tslint:latest",
-    "tslint-config-prettier"
-  ]
+  "extends": ["backend-tslint-rules"],
+  "rules": {
+    "file-name-casing": [true, "camel-case"]
+  }
 }

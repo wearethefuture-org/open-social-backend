@@ -1,5 +1,5 @@
-import  * as Router from 'koa-router'
-import { updateUser, users, user, createUser, deleteUser} from "./handlers/usersHandlers"
+import  * as Router from 'koa-router';
+import { updateUser, users, user, createUser, deleteUser } from './handlers/usersHandlers';
 
 export const router = new Router();
 

@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/aliases.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/aliases.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/db/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/relations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/relations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/categories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/categories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/characteristicsSettings.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/characteristicsSettings.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/characteristicsValues.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/characteristicsValues.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/comments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/comments.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/files.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/files.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/products.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/products.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/subCategories.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/subCategories.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/subCategoryCharacteristics.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/subCategoryCharacteristics.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/users.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/usersForgotPasswords.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/usersForgotPasswords.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/usersKeys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/usersKeys.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/users/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/baseModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/baseModel.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/env/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/env/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +122,7 @@
       <workItem from="1585244155807" duration="5448000" />
       <workItem from="1585320211485" duration="3978000" />
       <workItem from="1585325046583" duration="4204000" />
-      <workItem from="1585332912046" duration="3471000" />
+      <workItem from="1585332912046" duration="4040000" />
     </task>
     <servers />
   </component>
@@ -158,25 +138,25 @@
       <screen x="0" y="207" width="1920" height="873" />
     </state>
     <state x="743" y="301" width="424" height="491" key="FileChooserDialogImpl/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585320386323" />
-    <state width="1897" height="350" key="GridCell.Tab.0.bottom" timestamp="1585336600802">
+    <state width="1897" height="350" key="GridCell.Tab.0.bottom" timestamp="1585336715874">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336600802" />
+    <state width="1897" height="350" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
     <state width="1897" height="421" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
-    <state width="1897" height="350" key="GridCell.Tab.0.center" timestamp="1585336600802">
+    <state width="1897" height="350" key="GridCell.Tab.0.center" timestamp="1585336715874">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336600802" />
+    <state width="1897" height="350" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
     <state width="1897" height="421" key="GridCell.Tab.0.center/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
-    <state width="1897" height="350" key="GridCell.Tab.0.left" timestamp="1585336600801">
+    <state width="1897" height="350" key="GridCell.Tab.0.left" timestamp="1585336715873">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336600801" />
+    <state width="1897" height="350" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715873" />
     <state width="1897" height="421" key="GridCell.Tab.0.left/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627547" />
-    <state width="1897" height="350" key="GridCell.Tab.0.right" timestamp="1585336600802">
+    <state width="1897" height="350" key="GridCell.Tab.0.right" timestamp="1585336715874">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336600802" />
+    <state width="1897" height="350" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
     <state width="1897" height="421" key="GridCell.Tab.0.right/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
     <state width="1897" height="325" key="GridCell.Tab.1.bottom" timestamp="1584976890962">
       <screen x="0" y="207" width="1920" height="873" />

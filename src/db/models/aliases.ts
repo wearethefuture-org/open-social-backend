@@ -37,7 +37,7 @@ export const aliases = {
   files: {
     products: 'products'
   },
-  comments:{
+  comments: {
     user: 'user',
     product: 'product'
   }

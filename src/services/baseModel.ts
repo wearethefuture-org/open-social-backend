@@ -1,5 +1,5 @@
-import { Model } from '../db/models/index'
-import { aliases } from '../db/models/aliases'
+import { aliases } from '../db/models/aliases';
+import { Model } from '../db/models/index';
 
 export class BaseModelService {
   model: any;
@@ -30,4 +30,3 @@ export class BaseModelService {
   //   this.transaction = null;
   // }
 }
-

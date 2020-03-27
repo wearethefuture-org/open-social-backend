@@ -1,9 +1,9 @@
-import * as fs from 'fs'
-import * as path from 'path'
-import {Sequelize} from "sequelize";
+import * as fs from 'fs';
+import * as path from 'path';
+import { Sequelize } from 'sequelize';
 
-import {aliases} from './aliases'
-import {relations} from "./relations";
+import { aliases } from './aliases';
+import { relations } from './relations';
 
 const data =  {
   databaseName: 'test',
@@ -13,12 +13,12 @@ const data =  {
 } ;
 
 const basename = path.basename(__filename);
-const db:any = {
+const db: any = {
   aliases
 };
 
-const sequelize:any = new Sequelize("test", "postgres", "12321", {
-  host: "127.0.0.1",
+const sequelize: any = new Sequelize(process.env.DATABASE_NAME, process.env.POSTGRES_USERNAME, process.env.POSTGRES_PASSWORD, {
+  host: process.env.POSTGRES_HOST,
   dialect: 'postgres',
   pool: {
     max: 5,
@@ -29,21 +29,22 @@ const sequelize:any = new Sequelize("test", "postgres", "12321", {
 });
 
 fs.readdirSync(`${__dirname}/sources`)
-  .filter(file => {
-    return (
-      file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
-    );
-  })
-  .forEach(file => {
-    const model:any = sequelize.import(path.join(__dirname, 'sources', file));
-    db[model.name] = model;
-  });
+    .filter(file =>
+        (
+            file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
+        ))
+    .forEach(file => {
+      const model: any = sequelize.import(path.join(__dirname, 'sources', file));
+      db[model.name] = model;
+    });
 
-Object.keys(db).forEach(modelName => {
-  if (db[modelName].associate) {
-    db[modelName].associate(db);
-  }
-});
+// tslint:disable-next-line:newline-per-chained-call
+Object.keys(db)
+    .forEach(modelName => {
+      if (db[modelName].associate) {
+        db[modelName].associate(db);
+      }
+    });
 
 db.sequelize = sequelize;
 db.Sequelize = Sequelize;
@@ -52,6 +53,4 @@ relations(db);
 
 export {
   db as Model
-}
-
-
+};

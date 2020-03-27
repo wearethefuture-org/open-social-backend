@@ -16,7 +16,7 @@ export const deleteUser = async (ctx: any): Promise<void> => {
    try {
      const userService = new UserService();
      const { id } = ctx.params;
-     ctx.response.body = await userService.deleteUser(id);
+     ctx.response.body = await userService.deleteUser(+id);
    } catch (e) {
      ctx.response.body = 500;
    }
@@ -29,22 +29,22 @@ export const user = async (ctx: any): Promise<void> => {
     const { id } = ctx.params;
     ctx.response.body = await userService.getUser(id);
   } catch (e) {
-    ctx.response.body = 500
+    ctx.response.body = 500;
   }
 
 };
 
-export const users = async (ctx:any):Promise<void> => {
+export const users = async (ctx: any): Promise<void> => {
   try {
     const userService = new UserService();
     ctx.response.body = await userService.getUsers();
   } catch (e) {
-    ctx.response.body= 500;
+    ctx.response.body = 500;
 
   }
 };
 
-export const updateUser = async (ctx:any):Promise<void> => {
+export const updateUser = async (ctx: any): Promise<void> => {
   try {
     const userService = new UserService();
     // const storageService = new StorageService();

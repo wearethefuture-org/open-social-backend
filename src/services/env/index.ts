@@ -1,8 +1,7 @@
-import * as path from 'path';
 import * as dotenv from 'dotenv';
+import * as path from 'path';
 
-export const Env = (dir:string): void => {
-    console.log('dir',dir);
+export const envIndex = (dir: string): void => {
     let env = '';
     switch (process.env.NODE_ENV) {
         case 'local':
@@ -25,4 +24,4 @@ export const Env = (dir:string): void => {
     dotenv.config({
         path: path.resolve(dir, `${env}.env`)
     });
-}
+};

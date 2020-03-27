@@ -1,12 +1,12 @@
 
-import { BaseModelService } from './baseModel'
+import { BaseModelService } from './baseModel';
 
 export class UserService extends BaseModelService {
-  async getUsers() {
+  async getUsers(): Promise<void> {
     return this.model.users.findAll({});
   }
 
-  async getUser(id:string):Promise<void> {
+  async getUser(id: string): Promise<void> {
     return this.model.users.findOne({
       where: {
         id
@@ -20,7 +20,7 @@ export class UserService extends BaseModelService {
     });
   }
 
-  async getUserByEmail(email:string):Promise<void> {
+  async getUserByEmail(email: string): Promise<void> {
     return this.model.users.findOne({
       where: {
         email
@@ -28,11 +28,11 @@ export class UserService extends BaseModelService {
     });
   }
 
-  async createUser(user:object):Promise<void> {
+  async createUser(user: object): Promise<void> {
     return this.model.users.create(user);
   }
 
-  async updateUser(id:string, user:any):Promise<void> {
+  async updateUser(id: string, user: any): Promise<void> {
     return this.model.users.update(user, {
       where: {
         id
@@ -40,7 +40,7 @@ export class UserService extends BaseModelService {
     });
   }
 
-  async deleteUser(id:string):Promise<void> {
+  async deleteUser(id: number): Promise<void> {
     return this.model.users.destroy({
       where: {
         id

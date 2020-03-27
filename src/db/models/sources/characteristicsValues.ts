@@ -1,4 +1,4 @@
-module.exports =  (sequelize:any, DataTypes:any) => {
+module.exports =  (sequelize: any, DataTypes: any) => {
     const characteristicsValues = sequelize.define(
         'characteristicsValues',
         {
@@ -86,5 +86,6 @@ module.exports =  (sequelize:any, DataTypes:any) => {
             updatedAt: true
         }
     );
+
     return characteristicsValues;
 };

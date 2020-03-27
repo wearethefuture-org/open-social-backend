@@ -1,4 +1,4 @@
-module.exports =  (sequelize:any, DataTypes:any) => {
+module.exports =  (sequelize: any, DataTypes: any) => {
     const comments = sequelize.define(
         'comments',
         {
@@ -9,22 +9,22 @@ module.exports =  (sequelize:any, DataTypes:any) => {
                 autoIncrement: true,
                 field: 'id'
             },
-              message:{
+            message: {
                 type: DataTypes.STRING,
                 allowNull: false,
                 field: 'message'
               },
-              userId:{
+            userId: {
                 type: DataTypes.BIGINT,
-                references:{
+                references: {
                   model: 'users',
                   key: 'id'
                 },
                 field: 'userId'
               },
-              productId:{
+            productId: {
                 type: DataTypes.BIGINT,
-                references:{
+                references: {
                   model: 'products',
                   key: 'id'
                 },
@@ -49,5 +49,6 @@ module.exports =  (sequelize:any, DataTypes:any) => {
             updatedAt: true
         }
     );
+
     return comments;
 };

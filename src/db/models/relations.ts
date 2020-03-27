@@ -1,9 +1,9 @@
-export const relations = (db : any): void => {
+export const relations = (db: any): void => {
   db.categories.hasMany(db.subCategories, {
     as: db.aliases.categories.subCategories,
     field: 'category_id',
     targetKey: 'id',
-    foreignKey: 'categoryId',
+    foreignKey: 'categoryId'
   });
   db.subCategories.belongsTo(db.categories, {
     as: db.aliases.subCategories.categories,
@@ -17,7 +17,7 @@ export const relations = (db : any): void => {
     as: db.aliases.subCategories.products,
     field: 'sub_category_id',
     targetKey: 'id',
-    foreignKey: 'subCategoryId',
+    foreignKey: 'subCategoryId'
   });
   db.products.belongsTo(db.subCategories, {
     as: db.aliases.products.subCategories,
@@ -31,7 +31,7 @@ export const relations = (db : any): void => {
     as: db.aliases.products.characteristicsValues,
     field: 'product_id',
     targetKey: 'id',
-    foreignKey: 'productId',
+    foreignKey: 'productId'
   });
   db.characteristicsValues.belongsTo(db.products, {
     as: db.aliases.characteristicsValues.products,
@@ -50,7 +50,7 @@ export const relations = (db : any): void => {
     as: db.aliases.products.images,
     field: 'many_product_id',
     targetKey: 'id',
-    foreignKey: 'manyProductId',
+    foreignKey: 'manyProductId'
   });
   db.files.belongsTo(db.products, {
     as: db.aliases.products.products,
@@ -75,7 +75,7 @@ export const relations = (db : any): void => {
     as: db.aliases.characteristicsSettings.characteristicsValues,
     field: 'characteristic_setting_id',
     targetKey: 'id',
-    foreignKey: 'characteristicSettingId',
+    foreignKey: 'characteristicSettingId'
   });
   db.characteristicsValues.belongsTo(db.characteristicsSettings, {
     as: db.aliases.characteristicsValues.characteristicsSettings,
@@ -89,7 +89,7 @@ export const relations = (db : any): void => {
     as: db.aliases.users.usersKeys,
     field: 'user_id',
     targetKey: 'id',
-    foreignKey: 'userId',
+    foreignKey: 'userId'
   });
   db.usersKeys.belongsTo(db.users, {
     as: db.aliases.usersKeys.users,
@@ -103,7 +103,7 @@ export const relations = (db : any): void => {
     as: db.aliases.users.usersForgotPasswords,
     field: 'user_id',
     targetKey: 'id',
-    foreignKey: 'userId',
+    foreignKey: 'userId'
   });
   db.usersForgotPasswords.belongsTo(db.users, {
     as: db.aliases.usersForgotPasswords.users,
@@ -121,7 +121,7 @@ export const relations = (db : any): void => {
     as: db.aliases.users.comments,
     field: 'user_id',
     targetKey: 'id',
-    foreignKey: 'userId',
+    foreignKey: 'userId'
   });
   db.comments.belongsTo(db.users, {
     as: db.aliases.comments.users,
@@ -134,7 +134,7 @@ export const relations = (db : any): void => {
     as: db.aliases.products.comments,
     field: 'product_id',
     targetKey: 'id',
-    foreignKey: 'productId',
+    foreignKey: 'productId'
   });
   db.comments.belongsTo(db.products, {
     as: db.aliases.comments.product,

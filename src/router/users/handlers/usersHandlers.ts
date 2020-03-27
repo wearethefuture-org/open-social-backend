@@ -9,7 +9,6 @@ export const createUser = async (ctx: any): Promise<void> => {
   } catch (e) {
     ctx.response.body = 500;
   }
-
 };
 
 export const deleteUser = async (ctx: any): Promise<void> => {
@@ -20,7 +19,6 @@ export const deleteUser = async (ctx: any): Promise<void> => {
    } catch (e) {
      ctx.response.body = 500;
    }
-
 };
 
 export const user = async (ctx: any): Promise<void> => {
@@ -31,7 +29,6 @@ export const user = async (ctx: any): Promise<void> => {
   } catch (e) {
     ctx.response.body = 500;
   }
-
 };
 
 export const users = async (ctx: any): Promise<void> => {
@@ -40,7 +37,6 @@ export const users = async (ctx: any): Promise<void> => {
     ctx.response.body = await userService.getUsers();
   } catch (e) {
     ctx.response.body = 500;
-
   }
 };
 

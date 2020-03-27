@@ -1,0 +1,6 @@
+{
+  "extends": ["backend-tslint-rules"],
+  "rules": {
+    "file-name-casing": [true, "camel-case"]
+  }
+}

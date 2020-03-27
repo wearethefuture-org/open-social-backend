@@ -5,13 +5,6 @@ import { Sequelize } from 'sequelize';
 import { aliases } from './aliases';
 import { relations } from './relations';
 
-const data =  {
-  databaseName: 'test',
-  username : 'postgres',
-  password : '12321',
-  host: '127.0.0.1'
-} ;
-
 const basename = path.basename(__filename);
 const db: any = {
   aliases
@@ -38,7 +31,6 @@ fs.readdirSync(`${__dirname}/sources`)
       db[model.name] = model;
     });
 
-// tslint:disable-next-line:newline-per-chained-call
 Object.keys(db)
     .forEach(modelName => {
       if (db[modelName].associate) {

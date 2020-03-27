@@ -40,6 +40,7 @@ build/Release
 # Dependency directories
 node_modules/
 jspm_packages/
+.idea/
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/
@@ -108,7 +109,7 @@ dist
 .vscode-test
 
 # yarn v2
-
+package-lock.json
 .yarn/cache
 .yarn/unplugged
 .yarn/build-state.yml

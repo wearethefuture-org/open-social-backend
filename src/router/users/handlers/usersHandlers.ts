@@ -1,51 +1,64 @@
-
 import {UserService} from '../../../services/user'
-// const UserService = require('../../../services/user');
-
 // const StorageService = require('../../../services/storage');
 
-export const createUser = async (ctx:any) => {
-  const userService = new UserService();
-  const newUser = ctx.request.body;
-  ctx.response.body = await userService.createUser(newUser);
+export const createUser = async (ctx:any):Promise<void> => {
+  try {
+    const userService = new UserService();
+    const newUser = ctx.request.body;
+    ctx.response.body = await userService.createUser(newUser);
+  } catch (e) {
+    ctx.response.body = 500
+  }
+
 };
 
- export const deleteUser = async (ctx:any) => {
-  const userService = new UserService();
-  const { id } = ctx.params;
-  ctx.response.body = await userService.deleteUser(id);
+ export const deleteUser = async (ctx:any):Promise<void> => {
+   try {
+     const userService = new UserService();
+     const { id } = ctx.params;
+     ctx.response.body = await userService.deleteUser(id);
+   } catch (e) {
+     ctx.response.body = 500
+   }
+
 };
 
-export const user = async (ctx:any) => {
-  const userService = new UserService();
-  const { id } = ctx.params;
-  console.log(" id   ", id, typeof id);
-  ctx.response.body = await userService.getUser(id);
+export const user = async (ctx:any):Promise<void> => {
+  try {
+    const userService = new UserService();
+    const { id } = ctx.params;
+    ctx.response.body = await userService.getUser(id);
+  } catch (e) {
+    ctx.response.body = 500
+  }
+
 };
 
-export const users = async (ctx:any) => {
-  try{
+export const users = async (ctx:any):Promise<void> => {
+  try {
     const userService = new UserService();
     ctx.response.body = await userService.getUsers();
-  }catch (e) {
-    console.log('err', e);
+  } catch (e) {
     ctx.response.body= 500;
+
   }
 };
 
-export const updateUser = async (ctx:any) => {
-  const userService = new UserService();
-  // const storageService = new StorageService();
+export const updateUser = async (ctx:any):Promise<void> => {
+  try {
+    const userService = new UserService();
+    // const storageService = new StorageService();
+    const { id } = ctx.params;
+    const { body } = ctx.request;
 
-  const { id } = ctx.params;
-  const { body } = ctx.request;
-
-  if (!ctx.file) {
-    await userService.updateUser(id , body);
-    ctx.response.body = await userService.getUser(id);
-    return;
+    if (!ctx.file) {
+      await userService.updateUser(id , body);
+      ctx.response.body = await userService.getUser(id);
+      return;
+    }
+  } catch (e) {
+    ctx.response.body = 500
   }
-
   // const file = await storageService.uploadFile(ctx.file, 'users-images/');
   //
   // body.imgId = file.id;

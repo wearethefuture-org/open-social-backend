@@ -1,4 +1,4 @@
-export const relations = (db : any) => {
+export const relations = (db : any): void => {
   db.categories.hasMany(db.subCategories, {
     as: db.aliases.categories.subCategories,
     field: 'category_id',

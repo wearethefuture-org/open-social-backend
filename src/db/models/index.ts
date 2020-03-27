@@ -1,15 +1,9 @@
-
 import * as fs from 'fs'
-// const fs = require('fs');
 import * as path from 'path'
-// const path = require('path');
 import {Sequelize} from "sequelize";
 
-// const Sequelize = require('sequelize');
 import {aliases} from './aliases'
-// const aliases = require('./aliases');
 import {relations} from "./relations";
-// const relations = require('./relations');
 
 // const {
 //   databaseName,
@@ -48,7 +42,7 @@ fs.readdirSync(`${__dirname}/sources`)
     );
   })
   .forEach(file => {
-    const model = sequelize.import(path.join(__dirname, 'sources', file));
+    const model:any = sequelize.import(path.join(__dirname, 'sources', file));
     db[model.name] = model;
   });
 

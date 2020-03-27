@@ -1,9 +1,7 @@
 import * as path from 'path'
-// const path = require('path');
 import * as dotenv from 'dotenv'
-// const dotenv = require('dotenv');
 
-module.exports = (dir:any) => {
+export const Env = (dir:string): void => {
     let env = '';
     switch (process.env.NODE_ENV) {
         case 'local':

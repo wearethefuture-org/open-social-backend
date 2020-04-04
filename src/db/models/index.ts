@@ -1,6 +1,6 @@
 import * as fs from 'fs';
 import * as path from 'path';
-import { Sequelize } from 'sequelize';
+import { Sequelize } from 'sequelize-typescript';
 
 import { aliases } from './aliases';
 import { relations } from './relations';
@@ -24,7 +24,7 @@ const sequelize: any = new Sequelize(process.env.DATABASE_NAME, process.env.POST
 fs.readdirSync(`${__dirname}/sources`)
     .filter(file =>
         (
-            file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.js'
+            file.indexOf('.') !== 0 && file !== basename && file.slice(-3) === '.ts'
         ))
     .forEach(file => {
       const model: any = sequelize.import(path.join(__dirname, 'sources', file));

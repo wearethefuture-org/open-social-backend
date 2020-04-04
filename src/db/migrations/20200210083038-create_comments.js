@@ -19,15 +19,24 @@ module.exports = {
           model: 'users',
           key: 'id'
         },
-        field: 'userId'
+        field: 'user_id'
       },
-      productId:{
+      chatId:{
         type: DataTypes.BIGINT,
         references:{
-          model: 'products',
+          model: 'chats',
           key: 'id'
         },
-        field: 'productId'
+        field: 'chat_id'
+      },
+      fileId: {
+        type: DataTypes.BIGINT,
+        allowNull: true,
+        references: {
+            model: 'files',
+            key: 'id'
+        },
+        field: 'file_id'
       },
       createdAt: {
         type: DataTypes.DATE,

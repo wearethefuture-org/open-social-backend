@@ -1,5 +1,5 @@
 module.exports =  (sequelize: any, DataTypes: any) => {
-    const comments = sequelize.define(
+    return sequelize.define(
         'comments',
         {
             id: {
@@ -13,23 +13,32 @@ module.exports =  (sequelize: any, DataTypes: any) => {
                 type: DataTypes.STRING,
                 allowNull: false,
                 field: 'message'
-              },
+            },
             userId: {
                 type: DataTypes.BIGINT,
                 references: {
-                  model: 'users',
-                  key: 'id'
+                    model: 'users',
+                    key: 'id'
                 },
                 field: 'userId'
-              },
-            productId: {
+            },
+            chatId: {
                 type: DataTypes.BIGINT,
                 references: {
-                  model: 'products',
-                  key: 'id'
+                    model: 'chats',
+                    key: 'id'
                 },
-                field: 'productId'
-              },
+                field: 'chat_id'
+            },
+            fileId: {
+                type: DataTypes.BIGINT,
+                allowNull: true,
+                references: {
+                    model: 'files',
+                    key: 'id'
+                },
+                field: 'file_id'
+            },
             createdAt: {
                 type: DataTypes.DATE,
                 allowNull: false,
@@ -49,6 +58,4 @@ module.exports =  (sequelize: any, DataTypes: any) => {
             updatedAt: true
         }
     );
-
-    return comments;
 };

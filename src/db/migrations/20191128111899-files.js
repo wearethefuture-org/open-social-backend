@@ -13,29 +13,25 @@ module.exports = {
         allowNull: false,
         field: 'name'
       },
+      type: {
+          type: DataTypes.STRING,
+          allowNull: true,
+          field: 'name'
+      },
       url: {
         type: DataTypes.STRING,
         allowNull: false,
         field: 'url'
       },
-      oneProductId: {
-        type: DataTypes.BIGINT,
-        allowNull: true,
-        references: {
-          model: 'products',
-          key: 'id'
-        },
-        field: 'one_product_id'
-      },
-      manyProductId: {
-        type: DataTypes.BIGINT,
-        allowNull: true,
-        references: {
-          model: 'products',
-          key: 'id'
-        },
-        field: 'many_product_id'
-      },
+      // userId: {
+      //   type: DataTypes.BIGINT,
+      //   allowNull: true,
+      //   references: {
+      //       model: 'users',
+      //       key: 'id'
+      //   },
+      //   field: 'user_id'
+      // },
       createdAt: {
         type: DataTypes.DATE,
         allowNull: false,

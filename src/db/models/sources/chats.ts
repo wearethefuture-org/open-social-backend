@@ -1,6 +1,6 @@
 module.exports =  (sequelize: any, DataTypes: any) => {
-    const subCategories = sequelize.define(
-        'subCategories',
+    return sequelize.define(
+        'chats',
         {
             id: {
                 type: DataTypes.BIGINT,
@@ -8,15 +8,6 @@ module.exports =  (sequelize: any, DataTypes: any) => {
                 primaryKey: true,
                 autoIncrement: true,
                 field: 'id'
-            },
-            categoryId: {
-                type: DataTypes.BIGINT,
-                allowNull: false,
-                references: {
-                    model: 'categories',
-                    key: 'id'
-                },
-                field: 'category_id'
             },
             name: {
                 type: DataTypes.STRING,
@@ -28,10 +19,19 @@ module.exports =  (sequelize: any, DataTypes: any) => {
                 allowNull: true,
                 field: 'description'
             },
-            img: {
-                type: DataTypes.STRING,
+            logoId: {
+                type: DataTypes.BIGINT,
                 allowNull: true,
-                field: 'img'
+                references: {
+                    model: 'files',
+                    key: 'id'
+                },
+                field: 'logo_id'
+            },
+            available: {
+                type: DataTypes.BOOLEAN,
+                allowNull: false,
+                field: 'available'
             },
             createdAt: {
                 type: DataTypes.DATE,
@@ -46,12 +46,10 @@ module.exports =  (sequelize: any, DataTypes: any) => {
             }
         },
         {
-            tableName: 'sub_categories',
+            tableName: 'chats',
             timestamps: false,
             createdAt: 'created_at',
             updatedAt: true
         }
     );
-
-    return subCategories;
 };

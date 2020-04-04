@@ -2,41 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="my improves">
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/example.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nodemon.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/db/migrations/20191128111991-chats.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/db/models/sources/chats.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.sequelizerc" beforeDir="false" afterPath="$PROJECT_DIR$/.sequelizerc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sequelize.conf.js" beforeDir="false" afterPath="$PROJECT_DIR$/sequelize.conf.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191103133137-create_categories.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191103135020-create_sub_categories.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128101034-create_products_table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128111010-create_characteristics_settings_table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128111255-create_characteristics_values_table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128111833-create_sub_category_characteristics_table.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128111899-files.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/migrations/20191128111899-files.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128111900-create_users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/migrations/20191128111900-create_users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128111901-create_users_keys.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/migrations/20191128111901-create_users_keys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20191128111902-create_users_forgot_passwords.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/migrations/20200210083038-create_comments.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/migrations/20200210083038-create_comments.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/relations.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/relations.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/categories.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/characteristicsSettings.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/characteristicsValues.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/products.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/subCategories.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/subCategoryCharacteristics.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/db/models/sources/usersForgotPasswords.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/users/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/sources/comments.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/comments.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/sources/files.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/files.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/sources/users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/sources/usersKeys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/usersKeys.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/seeders/20191206150459-seed_users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/seeders/20191206150459-seed_users.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +56,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="$PROJECT_DIR$/node_modules/prettier" />
     <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
@@ -179,8 +157,16 @@
       <workItem from="1585320211485" duration="3978000" />
       <workItem from="1585325046583" duration="4204000" />
       <workItem from="1585332912046" duration="4040000" />
-      <workItem from="1585994533864" duration="10661000" />
+      <workItem from="1585994533864" duration="13512000" />
     </task>
+    <task id="LOCAL-00001" summary="my improves">
+      <created>1586005205100</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586005205100</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,10 +186,10 @@
     </state>
     <state x="605" y="194" width="611" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585069427099" />
     <state x="644" y="24" width="617" height="512" key="#com.intellij.fileTypes.FileTypeChooser/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1585994986040" />
-    <state x="507" y="133" key="CommitChangelistDialog2" timestamp="1586004741976">
+    <state x="507" y="133" key="CommitChangelistDialog2" timestamp="1586008057217">
       <screen x="57" y="24" width="1863" height="1056" />
     </state>
-    <state x="507" y="133" key="CommitChangelistDialog2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004741976" />
+    <state x="507" y="133" key="CommitChangelistDialog2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008057217" />
     <state x="157" y="96" width="1663" height="884" key="DiffContextDialog" timestamp="1586004429342">
       <screen x="57" y="24" width="1863" height="1056" />
     </state>
@@ -212,30 +198,30 @@
       <screen x="0" y="207" width="1920" height="873" />
     </state>
     <state x="743" y="301" width="424" height="491" key="FileChooserDialogImpl/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585320386323" />
-    <state width="1840" height="296" key="GridCell.Tab.0.bottom" timestamp="1586004410809">
+    <state width="1840" height="296" key="GridCell.Tab.0.bottom" timestamp="1586007115147">
       <screen x="57" y="24" width="1863" height="1056" />
     </state>
     <state width="1897" height="350" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
     <state width="1897" height="421" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
-    <state width="1840" height="296" key="GridCell.Tab.0.bottom/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004410809" />
-    <state width="1840" height="296" key="GridCell.Tab.0.center" timestamp="1586004410808">
+    <state width="1840" height="296" key="GridCell.Tab.0.bottom/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586007115147" />
+    <state width="1840" height="296" key="GridCell.Tab.0.center" timestamp="1586007115146">
       <screen x="57" y="24" width="1863" height="1056" />
     </state>
     <state width="1897" height="350" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
     <state width="1897" height="421" key="GridCell.Tab.0.center/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
-    <state width="1840" height="296" key="GridCell.Tab.0.center/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004410808" />
-    <state width="1840" height="296" key="GridCell.Tab.0.left" timestamp="1586004410808">
+    <state width="1840" height="296" key="GridCell.Tab.0.center/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586007115146" />
+    <state width="1840" height="296" key="GridCell.Tab.0.left" timestamp="1586007115145">
       <screen x="57" y="24" width="1863" height="1056" />
     </state>
     <state width="1897" height="350" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715873" />
     <state width="1897" height="421" key="GridCell.Tab.0.left/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627547" />
-    <state width="1840" height="296" key="GridCell.Tab.0.left/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004410808" />
-    <state width="1840" height="296" key="GridCell.Tab.0.right" timestamp="1586004410809">
+    <state width="1840" height="296" key="GridCell.Tab.0.left/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586007115145" />
+    <state width="1840" height="296" key="GridCell.Tab.0.right" timestamp="1586007115146">
       <screen x="57" y="24" width="1863" height="1056" />
     </state>
     <state width="1897" height="350" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
     <state width="1897" height="421" key="GridCell.Tab.0.right/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
-    <state width="1840" height="296" key="GridCell.Tab.0.right/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004410809" />
+    <state width="1840" height="296" key="GridCell.Tab.0.right/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586007115146" />
     <state width="1897" height="325" key="GridCell.Tab.1.bottom" timestamp="1584976890962">
       <screen x="0" y="207" width="1920" height="873" />
     </state>
@@ -293,6 +279,18 @@
       <screen x="57" y="24" width="1863" height="1056" />
     </state>
     <state x="751" y="244" key="VCS.ChangeListViewerDialog/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004686787" />
+    <state x="588" y="275" key="Vcs.Push.Dialog.v2" timestamp="1586005210065">
+      <screen x="57" y="24" width="1863" height="1056" />
+    </state>
+    <state x="588" y="275" key="Vcs.Push.Dialog.v2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586005210065" />
+    <state x="2294" y="-4" width="1380" height="767" maximized="true" key="dock-window-1" timestamp="1586005764570">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2294" y="-4" width="1380" height="767" maximized="true" key="dock-window-1/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586005764570" />
+    <state x="2351" y="105" width="1380" height="739" key="dock-window-2" timestamp="1586007970518">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2351" y="105" width="1380" height="739" key="dock-window-2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586007970518" />
     <state x="637" y="92" width="704" height="671" key="find.popup" timestamp="1585998844786">
       <screen x="57" y="24" width="1863" height="1056" />
     </state>

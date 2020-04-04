@@ -1,5 +1,5 @@
 module.exports = (sequelize: any, DataTypes: any) => {
-    const subCategories = sequelize.define(
+    return sequelize.define(
         'usersKeys',
         {
             id: {
@@ -23,6 +23,11 @@ module.exports = (sequelize: any, DataTypes: any) => {
                 allowNull: false,
                 field: 'key'
             },
+            type: {
+                type: DataTypes.STRING,
+                allowNull: false,
+                field: 'key'
+            },
             createdAt: {
                 type: DataTypes.DATE,
                 allowNull: false,
@@ -42,6 +47,4 @@ module.exports = (sequelize: any, DataTypes: any) => {
             updatedAt: true
         }
     );
-
-    return subCategories;
 };

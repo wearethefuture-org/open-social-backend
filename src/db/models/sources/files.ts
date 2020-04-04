@@ -1,5 +1,5 @@
 module.exports =  (sequelize: any, DataTypes: any) => {
-    const files = sequelize.define(
+    return sequelize.define(
         'files',
         {
             id: {
@@ -18,24 +18,6 @@ module.exports =  (sequelize: any, DataTypes: any) => {
                 type: DataTypes.STRING,
                 allowNull: false,
                 field: 'url'
-            },
-            oneProductId: {
-                type: DataTypes.BIGINT,
-                allowNull: true,
-                references: {
-                    model: 'products',
-                    key: 'id'
-                },
-                field: 'one_product_id'
-            },
-            manyProductId: {
-                type: DataTypes.BIGINT,
-                allowNull: true,
-                references: {
-                    model: 'products',
-                    key: 'id'
-                },
-                field: 'many_product_id'
             },
             createdAt: {
                 type: DataTypes.DATE,
@@ -56,5 +38,4 @@ module.exports =  (sequelize: any, DataTypes: any) => {
             updatedAt: true
         }
     );
-    return files;
 };

@@ -1,6 +1,6 @@
 module.exports =  (sequelize: any, DataTypes: any) => {
     return sequelize.define(
-        'comments',
+        'chats',
         {
             id: {
                 type: DataTypes.BIGINT,
@@ -9,35 +9,29 @@ module.exports =  (sequelize: any, DataTypes: any) => {
                 autoIncrement: true,
                 field: 'id'
             },
-            message: {
+            name: {
                 type: DataTypes.STRING,
                 allowNull: false,
-                field: 'message'
+                field: 'name'
             },
-            userId: {
-                type: DataTypes.BIGINT,
-                references: {
-                    model: 'users',
-                    key: 'id'
-                },
-                field: 'userId'
+            description: {
+                type: DataTypes.STRING,
+                allowNull: true,
+                field: 'description'
             },
-            chatId: {
-                type: DataTypes.BIGINT,
-                references: {
-                    model: 'chats',
-                    key: 'id'
-                },
-                field: 'chat_id'
-            },
-            fileId: {
+            logoId: {
                 type: DataTypes.BIGINT,
                 allowNull: true,
                 references: {
                     model: 'files',
                     key: 'id'
                 },
-                field: 'file_id'
+                field: 'logo_id'
+            },
+            available: {
+                type: DataTypes.BOOLEAN,
+                allowNull: false,
+                field: 'available'
             },
             createdAt: {
                 type: DataTypes.DATE,
@@ -52,7 +46,7 @@ module.exports =  (sequelize: any, DataTypes: any) => {
             }
         },
         {
-            tableName: 'comments',
+            tableName: 'chats',
             timestamps: false,
             createdAt: 'created_at',
             updatedAt: true

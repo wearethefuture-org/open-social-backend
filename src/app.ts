@@ -17,6 +17,7 @@ apiRouter.use(router);
 
 app.use(koaBody());
 app.use(apiRouter.routes());
+app.use(apiRouter.allowedMethods());
 
 const PORT = process.env.PORT;
 

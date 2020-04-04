@@ -1,4 +1,3 @@
-
 import { BaseModelService } from './baseModel';
 
 export class UserService extends BaseModelService {
@@ -12,10 +11,10 @@ export class UserService extends BaseModelService {
         id
       },
       include: [
-        {
-          model: this.model.files,
-          as: this.aliases.users.files
-        }
+        // {
+        //   model: this.model.files,
+        //   as: this.aliases.users.files
+        // }
       ]
     });
   }

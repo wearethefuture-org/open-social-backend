@@ -8,14 +8,14 @@ module.exports = {
         autoIncrement: true,
         field: 'id'
       },
-      imgId: {
+      avatarId: {
         type: DataTypes.BIGINT,
         allowNull: true,
         references: {
             model: 'files',
             key: 'id'
         },
-        field: 'image_id'
+        field: 'avatar_id'
       },
       firstName: {
         type: DataTypes.STRING,
@@ -56,7 +56,7 @@ module.exports = {
         defaultValue: false,
         field: 'disabled'
       },
-      dateBirthday: {
+      birthdayDate: {
         type: DataTypes.DATE,
         allowNull: false,
         field: 'birthday_date'

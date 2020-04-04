@@ -36,7 +36,8 @@ export const users = async (ctx: any): Promise<void> => {
     const userService = new UserService();
     ctx.response.body = await userService.getUsers();
   } catch (e) {
-    ctx.response.body = 500;
+    ctx.response.body = 'Internal Server Error';
+    ctx.response.status = 500;
   }
 };
 

@@ -3,6 +3,8 @@
     "module": "commonjs",
     "target": "es2017",
     "noImplicitAny": true,
+    "resolveJsonModule": true,
+    "baseUrl": "./src",
     "outDir": "./dist",
     "sourceMap": true,
     "experimentalDecorators": true,

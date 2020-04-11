@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/enums/Urls/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/enums/Urls/passport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/middleware/authMiddleware.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/auth/handlers/authHandlers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/auth/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/auth/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/mail/mail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/passport/passport.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/renderHTML/renderHTML.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/token/token.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/usersKeys/usersKeys.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/generateRandomString.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/httpError.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/baseModel.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/baseModel.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,15 +50,16 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/db" />
+    <property name="js.linters.configure.manually.selectedtslint" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/router" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -51,18 +70,18 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/router" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/services" />
+      <recent name="$PROJECT_DIR$/src/db" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/db/models/sources" />
       <recent name="$PROJECT_DIR$/src/db/models" />
       <recent name="$PROJECT_DIR$/src/services" />
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/db" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src/db/models/sources" />
-      <recent name="$PROJECT_DIR$/src/services/env" />
-      <recent name="$PROJECT_DIR$/src/router/users" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start:dev">
@@ -167,7 +186,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my improves" />
@@ -195,28 +214,28 @@
       <screen x="0" y="207" width="1920" height="873" />
     </state>
     <state x="743" y="301" width="424" height="491" key="FileChooserDialogImpl/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585320386323" />
-    <state width="1840" height="296" key="GridCell.Tab.0.bottom" timestamp="1586008132555">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state width="1897" height="248" key="GridCell.Tab.0.bottom" timestamp="1586639608685">
+      <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
+    <state width="1897" height="248" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1586639608685" />
     <state width="1897" height="421" key="GridCell.Tab.0.bottom/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
     <state width="1840" height="296" key="GridCell.Tab.0.bottom/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008132555" />
-    <state width="1840" height="296" key="GridCell.Tab.0.center" timestamp="1586008132554">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state width="1897" height="248" key="GridCell.Tab.0.center" timestamp="1586639608685">
+      <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
+    <state width="1897" height="248" key="GridCell.Tab.0.center/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1586639608685" />
     <state width="1897" height="421" key="GridCell.Tab.0.center/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
     <state width="1840" height="296" key="GridCell.Tab.0.center/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008132554" />
-    <state width="1840" height="296" key="GridCell.Tab.0.left" timestamp="1586008132554">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state width="1897" height="248" key="GridCell.Tab.0.left" timestamp="1586639608685">
+      <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715873" />
+    <state width="1897" height="248" key="GridCell.Tab.0.left/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1586639608685" />
     <state width="1897" height="421" key="GridCell.Tab.0.left/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627547" />
     <state width="1840" height="296" key="GridCell.Tab.0.left/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008132554" />
-    <state width="1840" height="296" key="GridCell.Tab.0.right" timestamp="1586008132554">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state width="1897" height="248" key="GridCell.Tab.0.right" timestamp="1586639608685">
+      <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state width="1897" height="350" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585336715874" />
+    <state width="1897" height="248" key="GridCell.Tab.0.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1586639608685" />
     <state width="1897" height="421" key="GridCell.Tab.0.right/1920.180.1600.900/0.27.1600.873@0.27.1600.873" timestamp="1585261627548" />
     <state width="1840" height="296" key="GridCell.Tab.0.right/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008132554" />
     <state width="1897" height="325" key="GridCell.Tab.1.bottom" timestamp="1584976890962">
@@ -267,10 +286,10 @@
       <screen x="0" y="207" width="1920" height="873" />
     </state>
     <state width="1897" height="325" key="GridCell.Tab.3.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1584976890962" />
-    <state x="493" y="24" width="1022" height="737" key="SettingsEditor" timestamp="1586004611706">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1586638183573">
+      <screen x="0" y="207" width="1920" height="873" />
     </state>
-    <state x="449" y="175" width="1022" height="737" key="SettingsEditor/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585320403812" />
+    <state x="449" y="175" width="1022" height="737" key="SettingsEditor/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1586638183573" />
     <state x="493" y="24" key="SettingsEditor/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004611706" />
     <state x="751" y="244" key="VCS.ChangeListViewerDialog" timestamp="1586004686787">
       <screen x="57" y="24" width="1863" height="1056" />

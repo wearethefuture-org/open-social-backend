@@ -1,10 +1,7 @@
-// import * as Pug  from 'koa-pug'
+// tslint:disable-next-line:no-require-imports
 const Pug = require('koa-pug');
-
 import * as path from 'path';
-// const path = require('path')
 
-//
 export class RenderHTMLService {
     pug: any;
     constructor() {
@@ -13,7 +10,7 @@ export class RenderHTMLService {
         });
     }
 
-    async render(name: any, params: any) {
+    async render(name: any, params: any): Promise<any> {
         return this.pug.render(name, params);
     }
 }

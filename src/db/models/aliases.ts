@@ -14,6 +14,7 @@ export const aliases = {
     images: 'images',
     comments: 'comments'
   },
+  chats: {},
   characteristicsSettings: {
     subCategories: 'subCategories',
     characteristicsValues: 'characteristicsValues'

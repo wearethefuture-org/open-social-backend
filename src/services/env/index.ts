@@ -18,6 +18,7 @@ export const envIndex = (dir: string): void => {
             break;
         default:
             env = '';
+            process.env.NODE_ENV = 'local';
             break;
     }
 

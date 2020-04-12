@@ -1,4 +1,5 @@
-import { BaseModelService } from './baseModel';
+
+import { BaseModelService } from '../baseModel';
 
 export class UserService extends BaseModelService {
   async getUsers(): Promise<void> {
@@ -11,20 +12,23 @@ export class UserService extends BaseModelService {
         id
       },
       include: [
-        // {
-        //   model: this.model.files,
-        //   as: this.aliases.users.files
-        // }
+        {
+          model: this.model.files,
+          as: this.aliases.users.files
+        }
       ]
     });
   }
 
-  async getUserByEmail(email: string): Promise<void> {
-    return this.model.users.findOne({
+  async getUserByEmail(email: string): Promise<object> {
+    const  result = await this.model.users.findOne({
       where: {
         email
       }
+      // raw: true
     });
+
+    return result;
   }
 
   async createUser(user: object): Promise<void> {

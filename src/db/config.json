@@ -2,7 +2,7 @@
   "local": {
     "username": "postgres",
     "password": "Test1234",
-    "database": "open_social_backend",
+    "database": "social",
     "host": "127.0.0.1",
     "dialect": "postgres",
     "migrationStorageTableName": "sequelize_meta",

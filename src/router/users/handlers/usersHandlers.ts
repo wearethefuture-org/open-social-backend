@@ -1,4 +1,4 @@
-import { UserService } from '../../../services/user';
+import { UserService } from '../../../services/user/user';
 // const StorageService = require('../../../services/storage');
 
 export const createUser = async (ctx: any): Promise<void> => {

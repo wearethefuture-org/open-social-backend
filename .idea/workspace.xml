@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -125,6 +124,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -162,7 +173,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586008080250</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="test commit">
+      <created>1586840951027</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586840951027</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,7 +188,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my improves" />
-    <option name="LAST_COMMIT_MESSAGE" value="my improves" />
+    <MESSAGE value="test commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="test commit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="200" key="#TSLint" timestamp="1586005098944">
@@ -182,9 +201,10 @@
     </state>
     <state x="605" y="194" width="611" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585069427099" />
     <state x="644" y="24" width="617" height="512" key="#com.intellij.fileTypes.FileTypeChooser/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1585994986040" />
-    <state x="507" y="133" key="CommitChangelistDialog2" timestamp="1586008080109">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state x="309" y="83" key="CommitChangelistDialog2" timestamp="1586840965257">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="309" y="83" key="CommitChangelistDialog2/1280.0.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1586840965257" />
     <state x="507" y="133" key="CommitChangelistDialog2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008080109" />
     <state x="157" y="96" width="1663" height="884" key="DiffContextDialog" timestamp="1586004429342">
       <screen x="57" y="24" width="1863" height="1056" />

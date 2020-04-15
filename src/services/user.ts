@@ -1,11 +1,12 @@
+import { IUser } from '../interfaces';
 import { BaseModelService } from './baseModel';
 
 export class UserService extends BaseModelService {
-  async getUsers(): Promise<void> {
+  async getUsers(): Promise<IUser[]> {
     return this.model.users.findAll({});
   }
 
-  async getUser(id: string): Promise<void> {
+  async getUser(id: string): Promise<IUser> {
     return this.model.users.findOne({
       where: {
         id

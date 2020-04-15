@@ -116,4 +116,6 @@ package-lock.json
 .pnp.*
 yarn.lock
 
-.idea
+/.idea/
+/.idea/workspace.xml
+/.idea/modules.xml

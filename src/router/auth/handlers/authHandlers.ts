@@ -15,6 +15,7 @@ export const register = async (ctx: any): Promise<void> => {
     try {
         const authService = new AuthService();
         const user = ctx.request.body;
+        await authService.register(user);
         ctx.response.status = 201;
     } catch (e) {
         console.log(e);

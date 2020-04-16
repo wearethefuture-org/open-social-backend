@@ -3,7 +3,7 @@ export class HttpError extends Error {
     expose: any;
     body: any;
     status: any;
-    constructor(statusCode: any, body: any, status: any = undefined) {
+    constructor(statusCode: any, body: any, status?: any) {
         super(body);
         this.expose = true;
 

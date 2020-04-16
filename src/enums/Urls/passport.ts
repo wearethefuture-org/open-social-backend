@@ -19,4 +19,4 @@ export const passportUrls = [
         url: '/api/v1/user/:id',
         method: 'DELETE'
     }
-]
+];

@@ -2,7 +2,6 @@
   "extends": ["backend-tslint-rules"],
   "rules": {
     "file-name-casing": [true, "camel-case"],
-    "no-default-import": false,
     "no-default-export": false,
     "arrow-return-shorthand": true,
     "callable-types": true,

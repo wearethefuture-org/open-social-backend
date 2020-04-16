@@ -1,4 +1,4 @@
-import { USER_ROLE, USER_STATUS } from '../constants';
+import { USER_ROLE, USER_STATUS } from '../enums/users/constants';
 
 export interface IUser {
   id: number;

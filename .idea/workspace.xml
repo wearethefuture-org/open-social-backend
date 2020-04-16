@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="">
+    <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="refactor code">
+      <change afterPath="$PROJECT_DIR$/src/enums/users/constants.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/router/auth/handlers/authHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/auth/handlers/authHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/constants.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/enums/Urls/passport.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/enums/Urls/passport.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/authMiddleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/authMiddleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/users/handlers/usersHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/httpError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/httpError.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tslint.json" beforeDir="false" afterPath="$PROJECT_DIR$/tslint.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,18 +61,18 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/db/models/sources" />
-      <recent name="$PROJECT_DIR$/src/db/models" />
-      <recent name="$PROJECT_DIR$/src/services" />
-      <recent name="$PROJECT_DIR$/src" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/router" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/services" />
       <recent name="$PROJECT_DIR$/src/db" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/db/models/sources" />
+      <recent name="$PROJECT_DIR$/src/db/models" />
+      <recent name="$PROJECT_DIR$/src/services" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start:dev">
@@ -196,7 +204,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my improves" />
     <MESSAGE value="create auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="create auth" />
+    <MESSAGE value="refactor code" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="588" y="200" key="#TSLint" timestamp="1586005098944">
@@ -208,11 +217,11 @@
     </state>
     <state x="605" y="194" width="611" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585069427099" />
     <state x="644" y="24" width="617" height="512" key="#com.intellij.fileTypes.FileTypeChooser/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1585994986040" />
-    <state x="309" y="83" key="CommitChangelistDialog2" timestamp="1587055701656">
-      <screen x="0" y="0" width="1280" height="800" />
+    <state x="507" y="133" key="CommitChangelistDialog2" timestamp="1587070121726">
+      <screen x="57" y="24" width="1863" height="1056" />
     </state>
     <state x="309" y="83" key="CommitChangelistDialog2/1280.0.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1587055701656" />
-    <state x="507" y="133" key="CommitChangelistDialog2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008080109" />
+    <state x="507" y="133" key="CommitChangelistDialog2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1587070121726" />
     <state x="69" y="55" width="1663" height="884" key="DiffContextDialog" timestamp="1586889777219">
       <screen x="0" y="0" width="1280" height="800" />
     </state>

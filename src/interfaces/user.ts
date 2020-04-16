@@ -2,7 +2,7 @@ import { USER_ROLE, USER_STATUS } from '../enums/users/constants';
 
 export interface IUser {
   id: number;
-  avatarId: number;
+  avatarId?: number;
   firstName: string;
   lastName: string;
   email: string;

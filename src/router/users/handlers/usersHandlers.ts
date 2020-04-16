@@ -37,7 +37,8 @@ export const user = async (ctx: any): Promise<void> => {
 export const users = async (ctx: any): Promise<void> => {
   try {
     const userService = new UserService();
-    ctx.response.body = await userService.getUsers();
+    const result = await userService.getUsers();
+    ctx.response.body = result;
   } catch (e) {
     ctx.response.body = JSON.stringify(e);
     ctx.response.status = 500;
@@ -50,6 +51,7 @@ export const updateUser = async (ctx: any): Promise<void> => {
     // const storageService = new StorageService();
     const { id } = ctx.params;
     const { body } = ctx.request;
+
     if (!ctx.file) {
       await userService.updateUser(id , body);
       ctx.response.body = await userService.getUser(id);

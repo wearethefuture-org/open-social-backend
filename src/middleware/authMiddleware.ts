@@ -1,6 +1,7 @@
-import { passportUrls } from '../enums/Urls';
-import { passport } from '../services/passport/passport';
-import { HttpError } from '../utils/httpError';
+import {passportUrls} from '../enums/Urls';
+import {passport} from '../services/passport/passport';
+import {HttpError} from '../utils/httpError';
+import {USER_STATUS} from "../constants";
 // tslint:disable-next-line:no-require-imports
 const { match } = require('path-to-regexp');
 
@@ -36,6 +37,9 @@ export const authMiddleware = async (ctx: any, next: any) => {
 
               if (!user) {
                      throw new HttpError(401, 'Unauthorized!' , 'Access denied');
+              }
+              if (user.status === USER_STATUS.pending) {
+                     throw new HttpError(401, 'Unconfirmed email!' , 'Access denied');
               }
 
               ctx.user = user;

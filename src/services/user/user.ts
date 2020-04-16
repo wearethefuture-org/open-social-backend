@@ -1,7 +1,16 @@
-
+import { IUser } from '../../interfaces';
+import { HttpError } from '../../utils/httpError';
 import { BaseModelService } from '../baseModel';
 
+
 export class UserService extends BaseModelService {
+
+  static checkExistUser(isUser: boolean): never | void {
+    if (isUser) {
+      throw new HttpError(409, 'User has already registered', 'Can\'t register');
+    }
+  }
+
   async getUsers(): Promise<void> {
     return this.model.users.findAll({});
   }
@@ -20,7 +29,7 @@ export class UserService extends BaseModelService {
     });
   }
 
-  async getUserByEmail(email: string): Promise<object> {
+  async getUserByEmail(email: string): Promise<IUser> {
     const  result = await this.model.users.findOne({
       where: {
         email
@@ -31,12 +40,12 @@ export class UserService extends BaseModelService {
     return result;
   }
 
-  async createUser(user: object): Promise<void> {
+  async createUser(user: object): Promise<{dataValues: IUser}> {
     return this.model.users.create(user);
   }
 
-  async updateUser(id: string, user: any): Promise<void> {
-    return this.model.users.update(user, {
+  async updateUser(id: number, newData: any): Promise<void> {
+    return this.model.users.update(newData, {
       where: {
         id
       }

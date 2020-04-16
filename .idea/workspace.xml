@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="">
+    <list default="true" id="ff9a9258-6ba5-4b8c-b1ba-8c537d199393" name="Default Changelist" comment="my improves">
+      <change afterPath="$PROJECT_DIR$/src/interfaces/userKey.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/mail/mail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/confirmEmail.pug" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/mail/mail.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/db/models/sources/usersKeys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/db/models/sources/usersKeys.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/interfaces/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/interfaces/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/middleware/authMiddleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/middleware/authMiddleware.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router/auth/handlers/authHandlers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router/auth/handlers/authHandlers.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/auth/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/auth/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/renderHTML/renderHTML.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/renderHTML/renderHTML.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/token/token.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/token/token.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/user/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/user/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/usersKeys/usersKeys.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/usersKeys/usersKeys.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +28,7 @@
       <list>
         <option value="tsconfig.json" />
         <option value="JavaScript File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -43,7 +55,7 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="12.14.1" />
     <property name="js.linters.configure.manually.selectedtslint" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/router" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
@@ -54,18 +66,18 @@
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/db/models/sources" />
+      <recent name="$PROJECT_DIR$/src/db/models" />
+      <recent name="$PROJECT_DIR$/src/services" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/router" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/services" />
       <recent name="$PROJECT_DIR$/src/db" />
       <recent name="$PROJECT_DIR$" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/db/models/sources" />
-      <recent name="$PROJECT_DIR$/src/db/models" />
-      <recent name="$PROJECT_DIR$/src/services" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
   <component name="RunManager" selected="npm.start:dev">
@@ -129,6 +141,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -151,6 +175,9 @@
       <workItem from="1585325046583" duration="4204000" />
       <workItem from="1585332912046" duration="4040000" />
       <workItem from="1585994533864" duration="13742000" />
+      <workItem from="1586863467291" duration="11292000" />
+      <workItem from="1586938078865" duration="9581000" />
+      <workItem from="1587046016273" duration="8241000" />
     </task>
     <task id="LOCAL-00001" summary="my improves">
       <created>1586005205100</created>
@@ -170,7 +197,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="my improves" />
@@ -186,13 +213,15 @@
     </state>
     <state x="605" y="194" width="611" height="423" key="#com.intellij.fileTypes.FileTypeChooser/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585069427099" />
     <state x="644" y="24" width="617" height="512" key="#com.intellij.fileTypes.FileTypeChooser/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1585994986040" />
-    <state x="507" y="133" key="CommitChangelistDialog2" timestamp="1586008080109">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state x="309" y="83" key="CommitChangelistDialog2" timestamp="1586889791469">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="309" y="83" key="CommitChangelistDialog2/1280.0.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1586889791468" />
     <state x="507" y="133" key="CommitChangelistDialog2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586008080109" />
-    <state x="157" y="96" width="1663" height="884" key="DiffContextDialog" timestamp="1586004429342">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state x="69" y="55" width="1663" height="884" key="DiffContextDialog" timestamp="1586889777219">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="69" y="55" key="DiffContextDialog/1280.0.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1586889777219" />
     <state x="157" y="96" width="1663" height="884" key="DiffContextDialog/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004429342" />
     <state x="743" y="301" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585320386323">
       <screen x="0" y="207" width="1920" height="873" />
@@ -270,9 +299,10 @@
       <screen x="0" y="207" width="1920" height="873" />
     </state>
     <state width="1897" height="325" key="GridCell.Tab.3.right/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1584976890962" />
-    <state x="449" y="175" width="1022" height="737" key="SettingsEditor" timestamp="1586638183573">
-      <screen x="0" y="207" width="1920" height="873" />
+    <state x="299" y="23" width="900" height="722" key="SettingsEditor" timestamp="1586971336361">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="299" y="23" width="900" height="722" key="SettingsEditor/1280.0.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1586971336361" />
     <state x="449" y="175" width="1022" height="737" key="SettingsEditor/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1586638183573" />
     <state x="493" y="24" key="SettingsEditor/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586004611706" />
     <state x="751" y="244" key="VCS.ChangeListViewerDialog" timestamp="1586004686787">
@@ -291,10 +321,15 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2351" y="105" width="1380" height="739" key="dock-window-2/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1586007970518" />
-    <state x="637" y="92" width="704" height="671" key="find.popup" timestamp="1585998844786">
-      <screen x="57" y="24" width="1863" height="1056" />
+    <state x="398" y="52" width="667" height="509" key="find.popup" timestamp="1587054410654">
+      <screen x="0" y="0" width="1280" height="800" />
     </state>
+    <state x="398" y="52" width="667" height="509" key="find.popup/1280.0.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1587054410654" />
     <state x="598" y="263" width="724" height="554" key="find.popup/1920.180.1600.900/0.207.1920.873@0.207.1920.873" timestamp="1585321570526" />
     <state x="637" y="92" width="704" height="671" key="find.popup/57.24.1863.1056/1920.0.1920.1080@57.24.1863.1056" timestamp="1585998844786" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1587047879639">
+      <screen x="0" y="0" width="1280" height="800" />
+    </state>
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/1280.0.1920.1080/0.0.1280.800@0.0.1280.800" timestamp="1587047879639" />
   </component>
 </project>

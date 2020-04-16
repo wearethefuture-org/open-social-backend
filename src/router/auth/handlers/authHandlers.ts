@@ -13,10 +13,9 @@ export const login = async (ctx: any): Promise<void> => {
 
 export const register = async (ctx: any): Promise<void> => {
     try {
-        console.log('register');
         const authService = new AuthService();
         const user = ctx.request.body;
-        ctx.response.body = await authService.register(user);
+        ctx.response.status = 201;
     } catch (e) {
         console.log(e);
     }

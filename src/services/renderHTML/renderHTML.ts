@@ -6,7 +6,7 @@ export class RenderHTMLService {
     pug: any;
     constructor() {
         this.pug = new Pug ({
-            viewPath: path.resolve(__dirname, '../views')
+            viewPath: path.resolve(__dirname, '../../views')
         });
     }
 

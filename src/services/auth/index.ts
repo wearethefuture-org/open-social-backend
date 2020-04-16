@@ -3,10 +3,10 @@ import { USER_STATUS } from '../../enums/users/constants';
 import { IUser } from '../../interfaces';
 import { HttpError } from '../../utils/httpError';
 import { BaseModelService } from '../baseModel';
-import { MailService } from '../mail/mail';
-import { TokenService } from '../token/token';
-import { UserService } from '../user/user';
-import { UsersKeysService } from '../usersKeys/usersKeys';
+import { MailService } from '../mail';
+import { TokenService } from '../token';
+import { UserService } from '../user';
+import { UsersKeysService } from '../usersKeys';
 
 export class AuthService extends BaseModelService {
 

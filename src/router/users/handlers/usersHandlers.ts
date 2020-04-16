@@ -1,4 +1,4 @@
-import { UserService } from '../../../services/user/user';
+import { UserService } from '../../../services/user';
 // const StorageService = require('../../../services/storage');
 
 export const createUser = async (ctx: any): Promise<void> => {
@@ -37,8 +37,7 @@ export const user = async (ctx: any): Promise<void> => {
 export const users = async (ctx: any): Promise<void> => {
   try {
     const userService = new UserService();
-    const result = await userService.getUsers();
-    ctx.response.body = result;
+    ctx.response.body = await userService.getUsers();
   } catch (e) {
     ctx.response.body = JSON.stringify(e);
     ctx.response.status = 500;

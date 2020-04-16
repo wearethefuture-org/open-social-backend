@@ -30,6 +30,7 @@
     "@types/passport-jwt": "^3.0.3",
     "@types/pug": "^2.0.4",
     "@types/validator": "^12.0.1",
+    "@types/nodemailer-smtp-transport": "^2.7.4",
     "backend-tslint-rules": "^1.14.0",
     "bcrypt": "^4.0.1",
     "dotenv": "^8.2.0",

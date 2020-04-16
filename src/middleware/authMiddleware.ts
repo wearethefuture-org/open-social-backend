@@ -1,6 +1,6 @@
 import { passportUrls } from '../enums/Urls';
 import { USER_STATUS } from '../enums/users/constants';
-import { passport } from '../services/passport/passport';
+import { passport } from '../services/passport';
 import { HttpError } from '../utils/httpError';
 
 import { match } from 'path-to-regexp';

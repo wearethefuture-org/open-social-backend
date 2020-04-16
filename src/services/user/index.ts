@@ -2,7 +2,6 @@ import { IUser } from '../../interfaces';
 import { HttpError } from '../../utils/httpError';
 import { BaseModelService } from '../baseModel';
 
-
 export class UserService extends BaseModelService {
 
   static checkExistUser(isUser: boolean): never | void {
@@ -30,14 +29,12 @@ export class UserService extends BaseModelService {
   }
 
   async getUserByEmail(email: string): Promise<IUser> {
-    const  result = await this.model.users.findOne({
+    return  this.model.users.findOne({
       where: {
         email
       }
       // raw: true
     });
-
-    return result;
   }
 
   async createUser(user: object): Promise<{dataValues: IUser}> {

@@ -1,4 +1,4 @@
-import { AuthService } from '../../../services/auth/auth';
+import { AuthService } from '../../../services/auth';
 
 export const login = async (ctx: any): Promise<void> => {
     const authService = new AuthService();
@@ -18,7 +18,8 @@ export const register = async (ctx: any): Promise<void> => {
         await authService.register(user);
         ctx.response.status = 201;
     } catch (e) {
-        console.log(e);
+        ctx.response.body = JSON.stringify(e);
+        ctx.response.status = 500;
     }
 
 };

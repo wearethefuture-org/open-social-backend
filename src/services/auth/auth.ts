@@ -6,8 +6,6 @@ import { BaseModelService } from '../baseModel';
 import { MailService } from '../mail/mail';
 import { TokenService } from '../token/token';
 import { UserService } from '../user/user';
-import { UsersKeysService } from '../usersKeys/usersKeys';
-
 
 export class AuthService extends BaseModelService {
 
@@ -56,20 +54,21 @@ export class AuthService extends BaseModelService {
         }
     }
 
-    async confirmRegistration(key: string): Promise<boolean> {
-        const userKeysService = new UsersKeysService();
-        const userService = new UserService();
+    async confirmRegistration(id: number): Promise<boolean> {
+        try {
+            const userService = new UserService();
+            const user = await userService.getUser(id);
 
-        const userKey = await userKeysService.getUserKey(key);
+            if (user) {
+                await userService.updateUser(id, {status: USER_STATUS.confirmed});
 
-        if (userKey) {
-            await userService.updateUser(userKey.userId, {status: USER_STATUS.confirmed});
-            userKeysService.deleteUserKey(userKey.id);
+                return true;
+            }
 
-            return true;
+            return false;
+        } catch (e) {
+            console.log('confirmRegistration', e);
         }
-
-        return false;
     }
 
 }

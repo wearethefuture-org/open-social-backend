@@ -33,7 +33,8 @@ export class UserService extends BaseModelService {
     const  result = await this.model.users.findOne({
       where: {
         email
-      }
+      },
+      attributes: {exclude: ['password']}
       // raw: true
     });
 

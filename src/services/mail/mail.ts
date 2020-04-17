@@ -32,11 +32,9 @@ export class MailService {
     }
 
     public async generateDataMail(id: number, name: string, toMail: string): Promise<{from: string, to: string, subject: string, text: string, html: string}> {
-        const userKeysService = new UsersKeysService();
         const renderHTMLService = new RenderHTMLService();
-        const key = await userKeysService.createUserKey(id);
         const html = await renderHTMLService.render('confirmEmail', {
-            url: `${process.env.FRONT_URL}:${process.env.FRONT_PORT}/auth/confirm/${key.key}`,
+            url: `${process.env.FRONT_URL}:${process.env.FRONT_PORT}/auth/confirm/?id=${id}`,
             name
         });
 

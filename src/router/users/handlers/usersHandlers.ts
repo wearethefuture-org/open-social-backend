@@ -7,7 +7,8 @@ export const createUser = async (ctx: any): Promise<void> => {
     const newUser = ctx.request.body;
     ctx.response.body = await userService.createUser(newUser);
   } catch (e) {
-    ctx.response.body = 500;
+    ctx.response.body = JSON.stringify(e);
+    ctx.response.status = 500;
   }
 };
 
@@ -17,7 +18,8 @@ export const deleteUser = async (ctx: any): Promise<void> => {
      const { id } = ctx.params;
      ctx.response.body = await userService.deleteUser(+id);
    } catch (e) {
-     ctx.response.body = 500;
+     ctx.response.body = JSON.stringify(e);
+     ctx.response.status = 500;
    }
 };
 
@@ -27,17 +29,17 @@ export const user = async (ctx: any): Promise<void> => {
     const { id } = ctx.params;
     ctx.response.body = await userService.getUser(id);
   } catch (e) {
-    ctx.response.body = 500;
+    ctx.response.body = JSON.stringify(e);
+    ctx.response.status = 500;
   }
 };
 
 export const users = async (ctx: any): Promise<void> => {
   try {
     const userService = new UserService();
-    const result = await userService.getUsers();
-    ctx.response.body = result;
+    ctx.response.body = await userService.getUsers();
   } catch (e) {
-    ctx.response.body = e.message;
+    ctx.response.body = JSON.stringify(e);
     ctx.response.status = 500;
   }
 };
@@ -54,7 +56,8 @@ export const updateUser = async (ctx: any): Promise<void> => {
       ctx.response.body = await userService.getUser(id);
     }
   } catch (e) {
-    ctx.response.body = 500;
+    ctx.response.body = JSON.stringify(e);
+    ctx.response.status = 500;
   }
   // const file = await storageService.uploadFile(ctx.file, 'users-images/');
   //

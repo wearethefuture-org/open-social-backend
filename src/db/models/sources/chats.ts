@@ -1,5 +1,5 @@
 module.exports =  (sequelize: any, DataTypes: any) => {
-    return sequelize.define(
+    const Chats = sequelize.define(
         'chats',
         {
             id: {
@@ -52,4 +52,10 @@ module.exports =  (sequelize: any, DataTypes: any) => {
             updatedAt: true
         }
     );
+
+    Chats.associate = (models: any) => {
+      Chats.belongsTo(models.users, {foreignKey: 'ownerId'});
+    };
+
+    return Chats;
 };
